@@ -1,0 +1,25 @@
+{
+    "name": "tree",
+    "version": "1.0.0",
+    "description": "",
+    "main": "dist/main.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "ts-node src/main.ts",
+        "watch": "nodemon -w src --exec ts-node src/main.ts"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/blessed": "^0.1.22",
+        "nodemon": "^3.0.1",
+        "ts-node": "^10.9.1"
+    },
+    "dependencies": {
+        "@types/node": "^20.4.2",
+        "blessed": "^0.1.81",
+        "fp-ts": "^2.16.0",
+        "typescript": "^5.1.6"
+    }
+}
