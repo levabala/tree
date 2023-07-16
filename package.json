@@ -6,13 +6,16 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "ts-node src/main.ts",
-        "watch": "nodemon -w src --exec ts-node src/main.ts"
+        "watch": "nodemon -w src --exec ts-node src/main.ts",
+        "depgraph": "depcruise src --include-only '^src' --output-type dot | dot -T svg > dependency-graph.svg",
+        "depgraph:folder": "depcruise src --include-only '^src' --output-type ddot | dot -T svg > dependency-graph-folder.svg"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "devDependencies": {
         "@types/blessed": "^0.1.22",
+        "dependency-cruiser": "^13.1.1",
         "nodemon": "^3.0.1",
         "ts-node": "^10.9.1"
     },
