@@ -1,0 +1,26 @@
+{
+    "name": "tree-chess",
+    "$schema": "../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "packages/tree-chess/src",
+    "projectType": "library",
+    "targets": {
+        "build": {
+            "executor": "@nx/js:swc",
+            "outputs": ["{options.outputPath}"],
+            "options": {
+                "outputPath": "dist/packages/tree-chess",
+                "main": "packages/tree-chess/src/index.ts",
+                "tsConfig": "packages/tree-chess/tsconfig.lib.json",
+                "assets": ["packages/tree-chess/*.md"]
+            }
+        },
+        "lint": {
+            "executor": "@nx/linter:eslint",
+            "outputs": ["{options.outputFile}"],
+            "options": {
+                "lintFilePatterns": ["packages/tree-chess/**/*.ts"]
+            }
+        }
+    },
+    "tags": []
+}

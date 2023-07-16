@@ -1,0 +1,13 @@
+{
+    "name": "@tree/tree-chess",
+    "version": "0.0.1",
+    "type": "commonjs",
+    "dependencies": {
+        "chess.js": "1.0.0-beta.6",
+        "fp-ts": "^2.16.0",
+        "uuid": "^9.0.0"
+    },
+    "devDependencies": {
+        "@types/uuid": "^9.0.2"
+    }
+}

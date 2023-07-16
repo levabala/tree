@@ -1,0 +1,8 @@
+{
+    "name": "@tree/tree-core",
+    "version": "0.0.1",
+    "type": "commonjs",
+    "dependencies": {
+        "fp-ts": "^2.16.0"
+    }
+}

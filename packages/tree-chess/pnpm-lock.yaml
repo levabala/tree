@@ -1,0 +1,47 @@
+lockfileVersion: '6.0'
+
+dependencies:
+    chess.js:
+        specifier: 1.0.0-beta.6
+        version: 1.0.0-beta.6
+    fp-ts:
+        specifier: ^2.16.0
+        version: 2.16.0
+    uuid:
+        specifier: ^9.0.0
+        version: 9.0.0
+
+devDependencies:
+    '@types/uuid':
+        specifier: ^9.0.2
+        version: 9.0.2
+
+packages:
+    /@types/uuid@9.0.2:
+        resolution:
+            {
+                integrity: sha512-kNnC1GFBLuhImSnV7w4njQkUiJi0ZXUycu1rUaouPqiKlXkh77JKgdRnTAp1x5eBwcIwbtI+3otwzuIDEuDoxQ==,
+            }
+        dev: true
+
+    /chess.js@1.0.0-beta.6:
+        resolution:
+            {
+                integrity: sha512-sqBfX1VL3csSyqVM5ogbKA+aRlZyWDh276ruWXphwI0lDUMs7iYjZs29BOi49f7mXeunJE7cdfnIZhihsyLnsA==,
+            }
+        dev: false
+
+    /fp-ts@2.16.0:
+        resolution:
+            {
+                integrity: sha512-bLq+KgbiXdTEoT1zcARrWEpa5z6A/8b7PcDW7Gef3NSisQ+VS7ll2Xbf1E+xsgik0rWub/8u0qP/iTTjj+PhxQ==,
+            }
+        dev: false
+
+    /uuid@9.0.0:
+        resolution:
+            {
+                integrity: sha512-MXcSTerfPa4uqyzStbRoTgt5XIe3x5+42+q1sDuy3R5MDk66URdLMOZe5aPX/SQd+kuYAh0FdP/pO28IkQyTeg==,
+            }
+        hasBin: true
+        dev: false

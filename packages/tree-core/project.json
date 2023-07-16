@@ -1,0 +1,26 @@
+{
+    "name": "tree-core",
+    "$schema": "../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "packages/tree-core/src",
+    "projectType": "library",
+    "targets": {
+        "build": {
+            "executor": "@nx/js:swc",
+            "outputs": ["{options.outputPath}"],
+            "options": {
+                "outputPath": "dist/packages/tree-core",
+                "main": "packages/tree-core/src/index.ts",
+                "tsConfig": "packages/tree-core/tsconfig.lib.json",
+                "assets": ["packages/tree-core/*.md"]
+            }
+        },
+        "lint": {
+            "executor": "@nx/linter:eslint",
+            "outputs": ["{options.outputFile}"],
+            "options": {
+                "lintFilePatterns": ["packages/tree-core/**/*.ts"]
+            }
+        }
+    },
+    "tags": []
+}
